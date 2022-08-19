@@ -631,6 +631,10 @@ itoa(int num, char *buffer, size_t len)
 }
 
 
+/* George Marsaglia's Uniform Random number generator
+ * Adapted from Cook's implementation:
+ * https://www.codeproject.com/Articles/25172/Simple-Random-Number-Generation
+ */
 static uint32_t
 _rand()
 {
